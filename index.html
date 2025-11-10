@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK College | TATVA Official Linktree</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+    :root {
+      --tatva-yellow: #d9e27b;
+      --tatva-text-dark: #1a1a1a;
+      --tatva-light-bg: #f0ffe1;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: var(--tatva-light-bg);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 0;
+    }
+
+    .linktree-container {
+      width: 100%;
+      max-width: 450px;
+      background-color: #68753c;
+      border-radius: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    /* Entry Animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Buttons */
+    .link-button {
+      transition: all 0.4s ease-out;
+      background: linear-gradient(90deg, #d9e27b 0%, #cbdc5b 100%);
+      color: var(--tatva-text-dark);
+      border-radius: 9999px;
+      font-weight: 700;
+      padding: 1.25rem 1rem;
+      box-shadow: 0 4px 10px rgba(236, 246, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-button::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.4s ease;
+    }
+
+    .link-button:hover::after {
+      left: 100%;
+    }
+
+    .link-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(217, 226, 123, 0.5);
+      background: linear-gradient(90deg, #e9f780 0%, #d9e27b 100%);
+    }
+
+    /* Social Links */
+    .social-link {
+      transition: all 0.3s ease;
+      color: var(--tatva-text-dark);
+      background-color: var(--tatva-yellow);
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-link:hover {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 0 15px rgba(217, 226, 123, 0.8);
+      background-color: #e9f780;
+    }
+
+    /* Glow Pulse */
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 10px rgba(217, 226, 123, 0.3), 0 0 20px rgba(217, 226, 123, 0.2); }
+      50% { box-shadow: 0 0 20px rgba(217, 226, 123, 0.6), 0 0 40px rgba(217, 226, 123, 0.3); }
+      100% { box-shadow: 0 0 10px rgba(217, 226, 123, 0.3), 0 0 20px rgba(217, 226, 123, 0.2); }
+    }
+
+    .logo-glow {
+      animation: glowPulse 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="linktree-container">
+    <!-- Top Section -->
+    <section class="text-center p-6 pb-4 relative">
+      <!-- Yellow Header -->
+      <div
+        class="mx-auto w-full h-20 mb-20 flex items-center justify-center rounded-lg relative overflow-hidden"
+        style="background-color: var(--tatva-yellow);"
+      >
+        <span
+          class="text-3xl font-black uppercase"
+          style="color: var(--tatva-text-dark)"
+        >TATVA 2025</span>
+      </div>
+
+      <!-- Centered Logo -->
+      <div class="relative w-full flex justify-center">
+        <div class="absolute -top-24 z-20 w-48 h-60 ">
+          <img
+            src="/tatva.png"
+            alt="SK College Logo"
+            class="w-full h-full object-cover"
+            onerror="this.onerror=null; this.src='https://placehold.co/176x176/6B7280/FFFFFF/png?text=SK%20Logo';"
+          />
+        </div>
+      </div>
+
+      <!-- Profile Info -->
+      <div class="pt-28">
+        <h1
+          class="text-4xl font-extrabold mb-1 tracking-tight"
+          style="color: #d9e27b;"
+        >
+          skcollege_tatva
+        </h1>
+
+        <p class="text-base font-normal max-w-xs mx-auto mb-6"
+         style="color: #ffffff;">
+          Tatva by S.K. College, Nerul — where youth energy meets creativity! A
+          fest of art, tech, commerce & culture.
+        </p>
+
+        <!-- Social Links -->
+       <div class="flex justify-center space-x-4 mb-8">
+    <a href="https://www.instagram.com/we.aresk?igsh=bXA2anA3Zno2bzVs" target="_blank" class="social-link"><i class="fab fa-instagram text-xl"></i></a>
+    <a href="https://wa.me/9820243403" target="_blank" class="social-link"><i class="fab fa-whatsapp text-xl"></i></a>
+    <a href="https://www.youtube.com/channel/UCgFXsGxP0imjUnxydHiW_pA" target="_blank" class="social-link"><i class="fab fa-youtube text-xl"></i></a>
+    <a href="https://www.facebook.com/skc.nerul/" target="_blank" class="social-link"><i class="fab fa-facebook-f text-xl"></i></a>
+    
+    <a href="https://www.skcollegenerul.com/" target="_blank" class="social-link"><i class="fas fa-globe text-xl"></i></a>
+</div>
+      </div>
+    </section>
+
+    <!-- Main Links -->
+    <section class="p-6 pt-0 space-y-4">
+      <a href="https://example.com/tatva-details" target="_blank" class="link-button flex items-center justify-center text-lg uppercase tracking-wide block w-full">Event Schedule & Info</a>
+      <a href="https://example.com/tatva-registration" target="_blank" class="link-button flex items-center justify-center text-lg uppercase tracking-wide block w-full">Register Now</a>
+      <a href="https://example.com/tatva-all-events" target="_blank" class="link-button flex items-center justify-center text-lg uppercase tracking-wide block w-full">Explore All Competitions</a>
+      <a href="https://example.com/tatva-sponsorship" target="_blank" class="link-button flex items-center justify-center text-lg uppercase tracking-wide block w-full">Join for Sponsorship</a>
+      <a href="https://example.com/skcollege" target="_blank" class="link-button flex items-center justify-center text-lg uppercase tracking-wide block w-full text-center">S.K. College of Science & Commerce</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center pt-4 pb-6">
+      <p class="text-gray-300 text-xs font-light">Powered by phelix creatives</p>
+    </footer>
+  </div>
+</body>
+</html>
